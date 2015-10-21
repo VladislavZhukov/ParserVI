@@ -1,0 +1,423 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<ListOfApartment>
+	<Apartment>
+		<IdApartment>TLT0059_1592</IdApartment>
+		<Date>2015-09-23 00:00:00</Date>
+		<District>Автозаводской</District>
+		<Quarter>1</Quarter>
+		<QuantityRoom>1</QuantityRoom>
+		<Street>Революционная</Street>
+		<Home>30</Home>
+		<Flor>1/5</Flor>
+		<Disposition>Ст. Московская</Disposition>
+		<WallMaterial>Панель</WallMaterial>
+		<Area>30/14/7</Area>
+		<Variant>обмен</Variant>
+		<Price>1350</Price>
+		<Balcony>Нет</Balcony>
+		<AdditionalInfo>462064</AdditionalInfo>
+		<Notes>Документы готовы Евро окна Железная дверь</Notes>
+		<Company>Комсом. АН</Company>
+		<Agent>Администратор</Agent>
+		<PhoneContact>20-70-92</PhoneContact>
+	</Apartment>
+	<Apartment>
+		<IdApartment>TLT0250_2680</IdApartment>
+		<Date>2015-10-19 00:00:00</Date>
+		<District>Автозаводской</District>
+		<Quarter>1</Quarter>
+		<QuantityRoom>1</QuantityRoom>
+		<Street>Революционная</Street>
+		<Home>30</Home>
+		<Flor>5/5</Flor>
+		<Disposition>Ст. Московская</Disposition>
+		<WallMaterial>Кирпич</WallMaterial>
+		<Area>30/18/7</Area>
+		<Variant>продажа</Variant>
+		<Price>1360</Price>
+		<Balcony>Лоджия</Balcony>
+		<AdditionalInfo>чистая продажа бонус риелтору</AdditionalInfo>
+		<Notes>Документы готовы Железная дверь Пустая Пустой Счетчики</Notes>
+		<Company>Тикон</Company>
+		<Agent>Ирина  631593 89053054959</Agent>
+		<PhoneContact>53-63-64</PhoneContact>
+	</Apartment>
+	<Apartment>
+		<IdApartment>TLT0037_2359</IdApartment>
+		<Date>2015-10-14 00:00:00</Date>
+		<District>Автозаводской</District>
+		<Quarter>1</Quarter>
+		<QuantityRoom>1</QuantityRoom>
+		<Street>Революционная</Street>
+		<Home>30</Home>
+		<Flor>5/5</Flor>
+		<Disposition>Ст. Московская</Disposition>
+		<WallMaterial>Панель</WallMaterial>
+		<Area>32/17/6</Area>
+		<Variant>продажа</Variant>
+		<Price>1380</Price>
+		<Balcony>Да</Balcony>
+		<AdditionalInfo>балкон остеклен. дерево, обычное сост.</AdditionalInfo>
+		<Notes>Документы готовы Железная дверь Изолированная</Notes>
+		<Company>ЛЭНД Недвижимость</Company>
+		<Agent>Инна 46-98-94</Agent>
+		<PhoneContact>77-94-84</PhoneContact>
+	</Apartment>
+	<Apartment>
+		<IdApartment>TLT0815_5202</IdApartment>
+		<Date>2015-10-16 00:00:00</Date>
+		<District>Автозаводской</District>
+		<Quarter>1</Quarter>
+		<QuantityRoom>1</QuantityRoom>
+		<Street>Ленинский пр-т</Street>
+		<Home>38</Home>
+		<Flor>5/5</Flor>
+		<Disposition>Ст. Московская</Disposition>
+		<WallMaterial>Панель</WallMaterial>
+		<Area>31/17/7</Area>
+		<Variant>продажа</Variant>
+		<Price>1390</Price>
+		<Balcony>Лоджия</Balcony>
+		<AdditionalInfo>нормальное состояние, пласт.окно на кухне.большой балкон, крыша не течет, Женя 89277705282</AdditionalInfo>
+		<Notes>Встроенная кухня Документы готовы Евро окна Железная дверь Изолированная</Notes>
+		<Company>ФЛ 36-54-51</Company>
+		<Agent />
+		<PhoneContact>36-54-51</PhoneContact>
+	</Apartment>
+	<Apartment>
+		<IdApartment>TLT0714_190</IdApartment>
+		<Date>2015-10-06 00:00:00</Date>
+		<District>Автозаводской</District>
+		<Quarter>1</Quarter>
+		<QuantityRoom>1</QuantityRoom>
+		<Street>Свердлова</Street>
+		<Home>41</Home>
+		<Flor>9/9</Flor>
+		<Disposition>Улучшенная</Disposition>
+		<WallMaterial>Кирпич</WallMaterial>
+		<Area>33/19/7</Area>
+		<Variant>продажа</Variant>
+		<Price>1390</Price>
+		<Balcony>Нет</Balcony>
+		<AdditionalInfo>89272132821 Наталья Хорошая квартира!Срочно продаем! Бонус!!!!!!</AdditionalInfo>
+		<Notes />
+		<Company>Лидер</Company>
+		<Agent>Наталья 89272132821</Agent>
+		<PhoneContact>57-05-61</PhoneContact>
+	</Apartment>
+	<Apartment>
+		<IdApartment>TLT0215_2689</IdApartment>
+		<Date>2015-09-30 00:00:00</Date>
+		<District>Автозаводской</District>
+		<Quarter>1</Quarter>
+		<QuantityRoom>1</QuantityRoom>
+		<Street>Революционная</Street>
+		<Home>44</Home>
+		<Flor>1/16</Flor>
+		<Disposition>Ташкентская</Disposition>
+		<WallMaterial>Панель</WallMaterial>
+		<Area>33/17/8</Area>
+		<Variant>продажа</Variant>
+		<Price>1399</Price>
+		<Balcony>Нет</Balcony>
+		<AdditionalInfo>новый ремонт в санузле. Смотреть ФОТО!</AdditionalInfo>
+		<Notes>Встроенная кухня Документы готовы Железная дверь Счетчики</Notes>
+		<Company>ВыбиРАЙ</Company>
+		<Agent>Алла 89879624243</Agent>
+		<PhoneContact>35-30-35</PhoneContact>
+	</Apartment>
+	<Apartment>
+		<IdApartment>TLT0743_50</IdApartment>
+		<Date>2015-10-19 00:00:00</Date>
+		<District>Автозаводской</District>
+		<Quarter>1</Quarter>
+		<QuantityRoom>1</QuantityRoom>
+		<Street>Баумана б-р</Street>
+		<Home>6</Home>
+		<Flor>5/5</Flor>
+		<Disposition>Ст. Московская</Disposition>
+		<WallMaterial>Панель</WallMaterial>
+		<Area>30/17/8</Area>
+		<Variant>продажа</Variant>
+		<Price>1400</Price>
+		<Balcony>Да</Balcony>
+		<AdditionalInfo>Чистая продажа!!!! Готовы к сделке!!!1 собственник.</AdditionalInfo>
+		<Notes>Документы готовы Железная дверь Изолированная Ключи в офисе Кондиционер Счетчики</Notes>
+		<Company>ФЛ 41-10-62</Company>
+		<Agent>Елена Чернова    411-062 411-062</Agent>
+		<PhoneContact>41-10-62</PhoneContact>
+	</Apartment>
+	<Apartment>
+		<IdApartment>TLT0559_326</IdApartment>
+		<Date>2015-10-19 00:00:00</Date>
+		<District>Автозаводской</District>
+		<Quarter>1</Quarter>
+		<QuantityRoom>1</QuantityRoom>
+		<Street>Свердлова</Street>
+		<Home>37</Home>
+		<Flor>5/5</Flor>
+		<Disposition>Ст. Московская</Disposition>
+		<WallMaterial>Панель</WallMaterial>
+		<Area>33/17/7</Area>
+		<Variant>продажа</Variant>
+		<Price>1400</Price>
+		<Balcony>Да</Balcony>
+		<AdditionalInfo>балкон 6 м на комн и кухню, чистая продажа 89277739908 окна во двор  хрошее состояние.</AdditionalInfo>
+		<Notes>Встроенная кухня Документы готовы Пустая Пустой Шкаф-купе</Notes>
+		<Company>В Приморском</Company>
+		<Agent>783892 Наталья 89277739908</Agent>
+		<PhoneContact>78-38-92</PhoneContact>
+	</Apartment>
+	<Apartment>
+		<IdApartment>TLT0525_2328</IdApartment>
+		<Date>2015-10-12 00:00:00</Date>
+		<District>Автозаводской</District>
+		<Quarter>1</Quarter>
+		<QuantityRoom>1</QuantityRoom>
+		<Street>Баумана б-р</Street>
+		<Home>6</Home>
+		<Flor>1/5</Flor>
+		<Disposition>Ст. Московская</Disposition>
+		<WallMaterial>Панель</WallMaterial>
+		<Area>29/15/7</Area>
+		<Variant>продажа</Variant>
+		<Price>1400</Price>
+		<Balcony>Нет</Balcony>
+		<AdditionalInfo>89171234293  ЗАХОДИ И ЖИВИ , натяжной потолок,     туал - разд, 1 -- собств,хорошее место.</AdditionalInfo>
+		<Notes>Встроенная кухня Документы готовы Евро окна Железная дверь Счетчики Шкаф-купе</Notes>
+		<Company>ИНвариант</Company>
+		<Agent>Татьяна 89171234293</Agent>
+		<PhoneContact>53-54-04</PhoneContact>
+	</Apartment>
+	<Apartment>
+		<IdApartment>TLT0786_280</IdApartment>
+		<Date>2015-10-20 00:00:00</Date>
+		<District>Автозаводской</District>
+		<Quarter>1</Quarter>
+		<QuantityRoom>1</QuantityRoom>
+		<Street>Свердлова</Street>
+		<Home>41</Home>
+		<Flor>9/9</Flor>
+		<Disposition>Улучшенная</Disposition>
+		<WallMaterial>Кирпич</WallMaterial>
+		<Area>33/18/9</Area>
+		<Variant>обмен</Variant>
+		<Price>1450</Price>
+		<Balcony>Нет</Balcony>
+		<AdditionalInfo>Продам 1к квартиру в хорошем состоянии. Кап. ремонт в доме 2013г.</AdditionalInfo>
+		<Notes>Встроенная кухня Документы готовы Евро окна Железная дверь Изолированная Счетчики Телефон</Notes>
+		<Company>КСАНДИВ</Company>
+		<Agent>Алексей 89277962008</Agent>
+		<PhoneContact>95-20-07</PhoneContact>
+	</Apartment>
+	<Apartment>
+		<IdApartment>TLT0468_636</IdApartment>
+		<Date>2015-10-13 00:00:00</Date>
+		<District>Автозаводской</District>
+		<Quarter>1</Quarter>
+		<QuantityRoom>1</QuantityRoom>
+		<Street>Революционная</Street>
+		<Home>44</Home>
+		<Flor>1/16</Flor>
+		<Disposition>Ташкентская</Disposition>
+		<WallMaterial>Панель</WallMaterial>
+		<Area>32/0/0</Area>
+		<Variant>продажа</Variant>
+		<Price>1450</Price>
+		<Balcony>Нет</Balcony>
+		<AdditionalInfo>784299 ЕЛЕНА ЧИСТАЯ ПРОДАЖА, ОДИН СОБСТВЕННИК</AdditionalInfo>
+		<Notes>Документы готовы Евро окна Железная дверь Изолированная</Notes>
+		<Company>ФЛ 78-42-99</Company>
+		<Agent>ЕЛЕНА 784299 89272684299</Agent>
+		<PhoneContact>78-42-99</PhoneContact>
+	</Apartment>
+	<Apartment>
+		<IdApartment>TLT0277_1944</IdApartment>
+		<Date>2015-10-05 00:00:00</Date>
+		<District>Автозаводской</District>
+		<Quarter>1</Quarter>
+		<QuantityRoom>1</QuantityRoom>
+		<Street>Московский пр-т</Street>
+		<Home>33</Home>
+		<Flor>5/5</Flor>
+		<Disposition>Ст. Московская</Disposition>
+		<WallMaterial>Панель</WallMaterial>
+		<Area>0/17/7</Area>
+		<Variant>продажа</Variant>
+		<Price>1450</Price>
+		<Balcony>Да</Balcony>
+		<AdditionalInfo>кондиционер.отличные межкомнатная и входная двери.новая сантехника.отличное тихое место,дет.сад и школа рядом.</AdditionalInfo>
+		<Notes>Встроенная кухня Документы готовы Евро окна Железная дверь Изолированная Кондиционер</Notes>
+		<Company>Вектор</Company>
+		<Agent>Оксана 89626114704</Agent>
+		<PhoneContact>40-87-04</PhoneContact>
+	</Apartment>
+	<Apartment>
+		<IdApartment>TLT0286_146</IdApartment>
+		<Date>2015-10-14 00:00:00</Date>
+		<District>Автозаводской</District>
+		<Quarter>1</Quarter>
+		<QuantityRoom>1</QuantityRoom>
+		<Street>Свердлова</Street>
+		<Home>41</Home>
+		<Flor>2/9</Flor>
+		<Disposition>Улучшенная</Disposition>
+		<WallMaterial>Кирпич</WallMaterial>
+		<Area>33/17/8</Area>
+		<Variant>продажа</Variant>
+		<Price>1450</Price>
+		<Balcony>Нет</Balcony>
+		<AdditionalInfo>возможен обмен на 1 кв в Центр.р-не</AdditionalInfo>
+		<Notes />
+		<Company>Волжский город</Company>
+		<Agent>Тутушева Елена Вадимовна 8-906-129-34-15</Agent>
+		<PhoneContact>49-13-40</PhoneContact>
+	</Apartment>
+	<Apartment>
+		<IdApartment>TLT0508_964</IdApartment>
+		<Date>2015-10-20 00:00:00</Date>
+		<District>Автозаводской</District>
+		<Quarter>1</Quarter>
+		<QuantityRoom>1</QuantityRoom>
+		<Street>Баумана б-р</Street>
+		<Home>6</Home>
+		<Flor>5/5</Flor>
+		<Disposition>Ст. Московская</Disposition>
+		<WallMaterial>Панель</WallMaterial>
+		<Area>31/17/7</Area>
+		<Variant>продажа</Variant>
+		<Price>1455</Price>
+		<Balcony>Да</Balcony>
+		<AdditionalInfo>сейф.дверь,ост.нов шкаф в корид(балк-пласт.окна,отдел.-вагонка),замена сантех, крыша не протек.,хор.соседиТОРГилиБОНУС!!!!!!!!!!</AdditionalInfo>
+		<Notes>Евро окна Изолированная</Notes>
+		<Company>ВИАЛ-Групп</Company>
+		<Agent>43-67-67; 8-902-294-22-47 Моисеева Елена</Agent>
+		<PhoneContact>95-61-31</PhoneContact>
+	</Apartment>
+	<Apartment>
+		<IdApartment>TLT0256_2548</IdApartment>
+		<Date>2015-10-12 00:00:00</Date>
+		<District>Автозаводской</District>
+		<Quarter>1</Quarter>
+		<QuantityRoom>1</QuantityRoom>
+		<Street>Свердлова</Street>
+		<Home>41</Home>
+		<Flor>6/9</Flor>
+		<Disposition>Улучшенная</Disposition>
+		<WallMaterial>Кирпич</WallMaterial>
+		<Area>33/18/8</Area>
+		<Variant>продажа</Variant>
+		<Price>1490</Price>
+		<Balcony>Нет</Balcony>
+		<AdditionalInfo>Чистая,уютная.Хорошее месторасположение.+79372351417 Светлана.</AdditionalInfo>
+		<Notes>Документы готовы Евро окна Железная дверь Изолированная Кондиционер Счетчики Шкаф-купе</Notes>
+		<Company>ЦеНТ</Company>
+		<Agent>Администратор</Agent>
+		<PhoneContact>70-94-56</PhoneContact>
+	</Apartment>
+	<Apartment>
+		<IdApartment>TLT0174_2188</IdApartment>
+		<Date>2015-09-02 00:00:00</Date>
+		<District>Автозаводской</District>
+		<Quarter>1</Quarter>
+		<QuantityRoom>1</QuantityRoom>
+		<Street>Московский пр-т</Street>
+		<Home>33</Home>
+		<Flor>5/5</Flor>
+		<Disposition>Ст. Московская</Disposition>
+		<WallMaterial>Панель</WallMaterial>
+		<Area>30/17/7</Area>
+		<Variant>продажа</Variant>
+		<Price>1500</Price>
+		<Balcony>Да</Balcony>
+		<AdditionalInfo>трубы поменяны, сан.тех. новая,</AdditionalInfo>
+		<Notes>Евро окна Железная дверь Изолированная</Notes>
+		<Company>АН Молодцов</Company>
+		<Agent>Людмила 89023370518</Agent>
+		<PhoneContact>51-58-88</PhoneContact>
+	</Apartment>
+	<Apartment>
+		<IdApartment>TLT0037_2362</IdApartment>
+		<Date>2015-10-16 00:00:00</Date>
+		<District>Автозаводской</District>
+		<Quarter>1</Quarter>
+		<QuantityRoom>1</QuantityRoom>
+		<Street>Баумана б-р</Street>
+		<Home>6</Home>
+		<Flor>4/5</Flor>
+		<Disposition>Ст. Московская</Disposition>
+		<WallMaterial>Панель</WallMaterial>
+		<Area>30/17/8</Area>
+		<Variant>продажа</Variant>
+		<Price>1500</Price>
+		<Balcony>Да</Balcony>
+		<AdditionalInfo>ТОРГ!!!балкон отделан рейкой, рядом школа, садик, остановки</AdditionalInfo>
+		<Notes>Документы готовы Евро окна Железная дверь Кондиционер Счетчики Телефон</Notes>
+		<Company>ЛЭНД Недвижимость</Company>
+		<Agent>Наталья 49-80-87</Agent>
+		<PhoneContact>77-94-84</PhoneContact>
+	</Apartment>
+	<Apartment>
+		<IdApartment>TLT0281_3651</IdApartment>
+		<Date>2015-10-07 00:00:00</Date>
+		<District>Автозаводской</District>
+		<Quarter>1</Quarter>
+		<QuantityRoom>1</QuantityRoom>
+		<Street>Свердлова</Street>
+		<Home>41</Home>
+		<Flor>8/9</Flor>
+		<Disposition>Улучшенная</Disposition>
+		<WallMaterial>Кирпич</WallMaterial>
+		<Area>33/19/7</Area>
+		<Variant>обмен</Variant>
+		<Price>1500</Price>
+		<Balcony>Нет</Balcony>
+		<AdditionalInfo>Всё свежо и красиво. Комната с нишей. Роскошная панорама. Срочно. Оксана 89276183074</AdditionalInfo>
+		<Notes>Встроенная кухня Документы готовы Евро окна Железная дверь Изолированная Телефон</Notes>
+		<Company>Алексеева и К</Company>
+		<Agent>Оськина Оксана 89276183074</Agent>
+		<PhoneContact>78-99-57</PhoneContact>
+	</Apartment>
+	<Apartment>
+		<IdApartment>TLT0487_81</IdApartment>
+		<Date>2015-10-13 00:00:00</Date>
+		<District>Автозаводской</District>
+		<Quarter>1</Quarter>
+		<QuantityRoom>1</QuantityRoom>
+		<Street>Революционная</Street>
+		<Home>50</Home>
+		<Flor>1/16</Flor>
+		<Disposition>Ташкентская</Disposition>
+		<WallMaterial>Панель</WallMaterial>
+		<Area>32/17/8</Area>
+		<Variant>продажа</Variant>
+		<Price>1500</Price>
+		<Balcony>Нет</Balcony>
+		<AdditionalInfo>Вахта кап. ремонт дома. Хорошие соседи. Развитая инфраструктура</AdditionalInfo>
+		<Notes>Встроенная кухня Евро окна Железная дверь Счетчики Шкаф-купе</Notes>
+		<Company>ФЛ 78-98-61</Company>
+		<Agent>Оксана 789861</Agent>
+		<PhoneContact>78-98-61</PhoneContact>
+	</Apartment>
+	<Apartment>
+		<IdApartment>TLT0498_5095</IdApartment>
+		<Date>2015-10-08 00:00:00</Date>
+		<District>Автозаводской</District>
+		<Quarter>1</Quarter>
+		<QuantityRoom>1</QuantityRoom>
+		<Street>Московский пр-т</Street>
+		<Home>33</Home>
+		<Flor>4/5</Flor>
+		<Disposition>Ст. Московская</Disposition>
+		<WallMaterial>Панель</WallMaterial>
+		<Area>34/18/7</Area>
+		<Variant>обмен</Variant>
+		<Price>1500</Price>
+		<Balcony>Да</Balcony>
+		<AdditionalInfo>чистенькая кв-ра,сантехника, трубы, вх.дверь-новая, балкон 6 м, тихий зеленый двор, см. фото</AdditionalInfo>
+		<Notes>Встроенная кухня Документы готовы Железная дверь Счетчики</Notes>
+		<Company>Альпари</Company>
+		<Agent>Анна Георгиевна 8-9171-23-72-12</Agent>
+		<PhoneContact>51-52-61</PhoneContact>
+	</Apartment>
+</ListOfApartment>
