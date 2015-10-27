@@ -58,7 +58,13 @@ namespace ParserVolgInfo.Core
             "Agent",
             "PhoneContact" };
 
-        #endregion        
+        #endregion
+
+        #region Данные для парсинга
+
+        static List<string> forParsQuantityPage = new List<string>() { " объект,", " объекта,", " объектов," };
+
+        #endregion
 
         #region Public методы
 
@@ -77,13 +83,13 @@ namespace ParserVolgInfo.Core
             //получаем ID квартир.
             List<string> idApartment = GetAllIdApartment();
 
-            int counterFinisApartment = 0;            
+            int counterFinisApartment = 0;
 
             //создаем файл apartment.xml
             using (var xmlWriter = new XmlTextWriter("apartment.xml", Encoding.UTF8))
             {
                 try
-                {                    
+                {
                     #region форматирование xml документа
 
                     xmlWriter.Formatting = Formatting.Indented;
@@ -147,19 +153,19 @@ namespace ParserVolgInfo.Core
             var listIdApartment = new List<string>();
 
             try
-            {                
+            {
                 var reqParams = new RequestParams();
-                
-                //получаем общее кол-во квартир             
-                var quantityApartment = 20; //GetCountPages();
+
+                //получаем общее кол-во квартир        
+                var quantityApartment = 20;//GetCountPages();
 
                 while (quantityApartment % 20 != 0)
                 {
-                    quantityApartment++;
+                    quantityApartment--;
                 }
 
                 //парсим и вытаскиваем все ID квартир (одна страница 20 квартир)
-                for (int i = 0; i < quantityApartment; i += 20)
+                for (int i = 0; i <= quantityApartment; i += 20)
                 {
                     using (var request = new HttpRequest())
                     {
@@ -183,8 +189,8 @@ namespace ParserVolgInfo.Core
             catch (Exception ex)
             {
                 Logger logger = LogManager.GetCurrentClassLogger();
-                logger.Error(ex);                
-            }            
+                logger.Error(ex);
+            }
 
             return listIdApartment.Distinct().ToList();
         }
@@ -193,7 +199,7 @@ namespace ParserVolgInfo.Core
         /// Возвращает общее кол-во квартир.
         /// </summary>
         /// <returns></returns>
-        private int GetCountPages()
+        private static int GetCountPages()
         {
             int countPages = 0;
 
@@ -206,8 +212,17 @@ namespace ParserVolgInfo.Core
                     //получаем страницу
                     sourcePage = request.Get("http://www.volga-info.ru/togliatti/search/kvartiryi/x").ToString();
 
-                    //парсим и получаем общее кол-во страниц
-                    countPages = Convert.ToInt32(sourcePage.Substrings("Всего найдено ", " объекта,", 0)[0]);
+                    foreach (var item in forParsQuantityPage)
+                    {
+                        var numOfPages = sourcePage.Substrings("Всего найдено ", item, 0);
+
+                        if (numOfPages.Length != 0)
+                        {
+                            //парсим и получаем общее кол-во страниц
+                            countPages = Convert.ToInt32(numOfPages[0]);
+                        }
+                    }
+
                 }
             }
             catch (Exception ex)
@@ -240,7 +255,7 @@ namespace ParserVolgInfo.Core
                     for (int i = 0; i < ArrPropAparXml.Length; i++)
                     {
                         xmlWriter.WriteStartElement(ArrPropAparXml[i]);
-                        
+
                         var parsData = sourcePage.Substrings("<b>" + ArrPropAparPars[i] + "</b></td><td>", "</td></tr>", 0);
 
                         if (parsData.Length != 0)
@@ -249,12 +264,12 @@ namespace ParserVolgInfo.Core
                         }
 
                         xmlWriter.WriteEndElement();
-                    }                   
+                    }
                 }
 
                 xmlWriter.WriteEndElement();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Logger logger = LogManager.GetCurrentClassLogger();
                 logger.Error(ex);
@@ -284,19 +299,19 @@ namespace ParserVolgInfo.Core
 
                     //сохраняем фото
                     using (WebClient client = new WebClient())
-                    {                        
+                    {
                         nameImage++;
                         string path = pathImageFile + "\\" + nameImage.ToString() + ".jpg";
                         client.DownloadFile(url, path);
                     }
-                }                
+                }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Logger logger = LogManager.GetCurrentClassLogger();
                 logger.Error(ex);
             }
-        }        
+        }
 
         #endregion
     }

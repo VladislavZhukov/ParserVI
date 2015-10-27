@@ -64,19 +64,9 @@
     <Content Include="obj\Debug\ParserVolgInfo.exe" />
     <Content Include="obj\Debug\ParserVolgInfo.pdb" />
     <None Include="App.config" />
-    <Content Include="bin\Debug\NLog.dll" />
-    <Content Include="bin\Debug\NLog.xml" />
-    <Content Include="bin\Debug\ParserVolgInfo.exe" />
-    <Content Include="bin\Debug\ParserVolgInfo.pdb" />
-    <Content Include="bin\Debug\ParserVolgInfo.vshost.exe" />
-    <Content Include="bin\Debug\xNet.dll" />
     <Content Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="bin\Debug\NLog.config" />
-    <None Include="bin\Debug\ParserVolgInfo.exe.config" />
-    <None Include="bin\Debug\ParserVolgInfo.vshost.exe.config" />
-    <None Include="bin\Debug\ParserVolgInfo.vshost.exe.manifest" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -85,7 +75,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="bin\Release\" />
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>
