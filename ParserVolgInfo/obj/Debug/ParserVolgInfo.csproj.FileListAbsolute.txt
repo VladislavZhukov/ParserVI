@@ -60,3 +60,13 @@ E:\01_project\001_prod\ParserVolgInfoGit\ParserVolgInfo\bin\Debug\NLog.dll
 E:\01_project\001_prod\ParserVolgInfoGit\ParserVolgInfo\bin\Debug\xNet.dll
 E:\01_project\001_prod\ParserVolgInfoGit\ParserVolgInfo\bin\Debug\NLog.xml
 E:\01_project\001_prod\ParserVolgInfoGit\ParserVolgInfo\obj\Debug\ParserVolgInfo.csprojResolveAssemblyReference.cache
+E:\01_project\001_prod\ParserVI\ParserVolgInfo\bin\Debug\ParserVolgInfo.exe.config
+E:\01_project\001_prod\ParserVI\ParserVolgInfo\obj\Debug\ParserVolgInfo.exe
+E:\01_project\001_prod\ParserVI\ParserVolgInfo\obj\Debug\ParserVolgInfo.pdb
+E:\01_project\001_prod\ParserVI\ParserVolgInfo\obj\Debug\ParserVolgInfo.csprojResolveAssemblyReference.cache
+E:\01_project\001_prod\ParserVI\ParserVolgInfo\bin\Debug\NLog.config
+E:\01_project\001_prod\ParserVI\ParserVolgInfo\bin\Debug\ParserVolgInfo.exe
+E:\01_project\001_prod\ParserVI\ParserVolgInfo\bin\Debug\ParserVolgInfo.pdb
+E:\01_project\001_prod\ParserVI\ParserVolgInfo\bin\Debug\NLog.dll
+E:\01_project\001_prod\ParserVI\ParserVolgInfo\bin\Debug\xNet.dll
+E:\01_project\001_prod\ParserVI\ParserVolgInfo\bin\Debug\NLog.xml

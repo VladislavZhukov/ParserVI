@@ -62,7 +62,7 @@ namespace ParserVolgInfo.Core
 
         #region Данные для парсинга
 
-        static List<string> forParsQuantityPage = new List<string>() { " объект,", " объекта,", " объектов," };
+        private static List<string> forParsQuantityPage = new List<string>() { " объект,", " объекта,", " объектов," };
 
         #endregion
 
@@ -80,10 +80,13 @@ namespace ParserVolgInfo.Core
             Directory.CreateDirectory("image");
             Directory.CreateDirectory("log");
 
-            //получаем ID квартир.
-            List<string> idApartment = GetAllIdApartment();
+            //получаем общее кол-во квартир        
+            var quantityApartment = 20;//GetCountPages();
 
-            int counterFinisApartment = 0;
+            //получаем ID квартир.
+            List<string> idApartment = GetAllIdApartment(quantityApartment);
+
+            int counterFinishApartment = 0;
 
             //создаем файл apartment.xml
             using (var xmlWriter = new XmlTextWriter("apartment.xml", Encoding.UTF8))
@@ -121,7 +124,7 @@ namespace ParserVolgInfo.Core
                                 CreateDirAndPfoto(idApart, sourcePage, imageUrl);
                             }
 
-                            counterFinisApartment++;
+                            counterFinishApartment++;
                         }
                     }
 
@@ -135,7 +138,7 @@ namespace ParserVolgInfo.Core
                 finally
                 {
                     Logger logger = LogManager.GetCurrentClassLogger();
-                    logger.Info("квартир спарсено:" + counterFinisApartment);
+                    logger.Info("квартир спарсено:" + counterFinishApartment);
                 }
             }
         }
@@ -143,57 +146,6 @@ namespace ParserVolgInfo.Core
         #endregion
 
         #region Private методы
-
-        /// <summary>
-        /// Возвращает List с id квартир. Для перехода по страницам (каждая квартира имеет свою страницу). 
-        /// </summary>
-        /// <returns>коллекция ID квартир</returns>
-        private static List<string> GetAllIdApartment()
-        {
-            var listIdApartment = new List<string>();
-
-            try
-            {
-                var reqParams = new RequestParams();
-
-                //получаем общее кол-во квартир        
-                var quantityApartment = 20;//GetCountPages();
-
-                while (quantityApartment % 20 != 0)
-                {
-                    quantityApartment--;
-                }
-
-                //парсим и вытаскиваем все ID квартир (одна страница 20 квартир)
-                for (int i = 0; i <= quantityApartment; i += 20)
-                {
-                    using (var request = new HttpRequest())
-                    {
-                        reqParams["SEARCH_BEGINPOS"] = i.ToString();
-
-                        //получпем страницу с квартирами
-                        string contentPage = request.Post("www.volga-info.ru/togliatti/search/kvartiryi/x", reqParams).ToString();
-
-                        string[] apartmentId;
-
-                        //парсим страницу и записываем данные в массив
-                        apartmentId = contentPage.Substrings("/togliatti/object/kvartiryi/", "/\">", 0).Distinct().ToArray();
-
-                        foreach (var item in apartmentId)
-                        {
-                            listIdApartment.Add(item);
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Logger logger = LogManager.GetCurrentClassLogger();
-                logger.Error(ex);
-            }
-
-            return listIdApartment.Distinct().ToList();
-        }
 
         /// <summary>
         /// Возвращает общее кол-во квартир.
@@ -231,8 +183,56 @@ namespace ParserVolgInfo.Core
                 logger.Error(ex);
             }
 
+            while (countPages % 20 != 0)
+            {
+                countPages--;
+            }
+
             return countPages;
         }
+
+        /// <summary>
+        /// Возвращает List с id квартир. Для перехода по страницам (каждая квартира имеет свою страницу). 
+        /// </summary>
+        /// <returns>коллекция ID квартир</returns>
+        private static List<string> GetAllIdApartment(int numberApartments)
+        {
+            var listIdApartment = new List<string>();
+
+            try
+            {
+                var reqParams = new RequestParams();
+
+                //парсим и вытаскиваем все ID квартир (одна страница 20 квартир)
+                for (int i = 0; i <= numberApartments; i += 20)
+                {
+                    using (var request = new HttpRequest())
+                    {
+                        reqParams["SEARCH_BEGINPOS"] = i.ToString();
+
+                        //получпем страницу с квартирами
+                        string contentPage = request.Post("www.volga-info.ru/togliatti/search/kvartiryi/x", reqParams).ToString();
+
+                        string[] apartmentId;
+
+                        //парсим страницу и записываем данные в массив
+                        apartmentId = contentPage.Substrings("/togliatti/object/kvartiryi/", "/\">", 0).Distinct().ToArray();
+
+                        foreach (var item in apartmentId)
+                        {
+                            listIdApartment.Add(item);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger logger = LogManager.GetCurrentClassLogger();
+                logger.Error(ex);
+            }
+
+            return listIdApartment.Distinct().ToList();
+        }        
 
         /// <summary>
         /// Метод парсит и записывает в XML файл данные со страницы.

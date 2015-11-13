@@ -52,7 +52,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\DataApartment.cs" />
     <Compile Include="Core\ParserVI.cs" />
+    <Compile Include="Core\ParserVI_All.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
@@ -60,6 +62,25 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Docs\волга инфо\СКРИНЫ ВОЛГА ИНФО\1.jpg" />
+    <Content Include="Docs\волга инфо\СКРИНЫ ВОЛГА ИНФО\10.jpg" />
+    <Content Include="Docs\волга инфо\СКРИНЫ ВОЛГА ИНФО\11.jpg" />
+    <Content Include="Docs\волга инфо\СКРИНЫ ВОЛГА ИНФО\12.jpg" />
+    <Content Include="Docs\волга инфо\СКРИНЫ ВОЛГА ИНФО\13.jpg" />
+    <Content Include="Docs\волга инфо\СКРИНЫ ВОЛГА ИНФО\14.jpg" />
+    <Content Include="Docs\волга инфо\СКРИНЫ ВОЛГА ИНФО\15.jpg" />
+    <Content Include="Docs\волга инфо\СКРИНЫ ВОЛГА ИНФО\16.jpg" />
+    <Content Include="Docs\волга инфо\СКРИНЫ ВОЛГА ИНФО\17.jpg" />
+    <Content Include="Docs\волга инфо\СКРИНЫ ВОЛГА ИНФО\2.png" />
+    <Content Include="Docs\волга инфо\СКРИНЫ ВОЛГА ИНФО\3.jpg" />
+    <Content Include="Docs\волга инфо\СКРИНЫ ВОЛГА ИНФО\4.jpg" />
+    <Content Include="Docs\волга инфо\СКРИНЫ ВОЛГА ИНФО\5.jpg" />
+    <Content Include="Docs\волга инфо\СКРИНЫ ВОЛГА ИНФО\6.jpg" />
+    <Content Include="Docs\волга инфо\СКРИНЫ ВОЛГА ИНФО\7.jpg" />
+    <Content Include="Docs\волга инфо\СКРИНЫ ВОЛГА ИНФО\8.jpg" />
+    <Content Include="Docs\волга инфо\СКРИНЫ ВОЛГА ИНФО\9.jpg" />
+    <Content Include="Docs\список фирм для обзвона.txt" />
+    <Content Include="Docs\функционал волга инфо.txt" />
     <Content Include="obj\Debug\ParserVolgInfo.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\ParserVolgInfo.exe" />
     <Content Include="obj\Debug\ParserVolgInfo.pdb" />
@@ -67,6 +88,8 @@
     <Content Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Docs\Аналоги для риэлторов.docx" />
+    <None Include="Docs\План реализации.odt" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>
