@@ -7,10 +7,10 @@ namespace ParserVolgInfo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Парсер запущен, ожидайте окончания выполнения работы...");
+            
             ParserVI_All.StartParser();        
                
-            Console.WriteLine("Работа завершена.");
+            
         }
     }
 }

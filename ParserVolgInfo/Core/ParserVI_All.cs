@@ -1,7 +1,6 @@
 ﻿using NLog;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -52,6 +51,13 @@ namespace ParserVolgInfo.Core
 
         static public void StartParser()
         {
+            #region Настройки консоли
+            Console.SetWindowSize(120, 10);
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.Title = "Parser VI active";
+            Console.WriteLine("Парсер запущен, ожидайте окончания выполнения работы...");
+            #endregion
+
             try
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(DataApartment));
@@ -78,6 +84,8 @@ namespace ParserVolgInfo.Core
                     string typeApartament = dataApart.UrlTypeapArtement[i].Substring("/search/", "/", 0).ToString();
                     string pathCurrentApartment = "apartment/" + typeApartament;
                     string pathCurrentApartmentPhoto = pathCurrentApartment + "/photo";
+
+                    Console.WriteLine("идет получение " + typeApartament);
 
                     Directory.CreateDirectory(pathCurrentApartment);
                     Directory.CreateDirectory(pathCurrentApartmentPhoto);
@@ -109,8 +117,28 @@ namespace ParserVolgInfo.Core
                         {
                             using (var request = new HttpRequest())
                             {
+                                Console.WriteLine("Готовые " + typeApartament + " = " + counterFinishApartment);
+
+                                string urlApartment = dataApart.UrlTypeapArtement[i].Replace("/x", "/").Replace("search", "object") + idApart;
+
+                                DateTime startTime = DateTime.Now;
+                                Console.WriteLine("Получение данных со страницы: " + urlApartment);
+
                                 //получаем страницу
-                                var sourcePage = request.Get(dataApart.UrlTypeapArtement[i].Replace("/x", "/").Replace("search", "object") + idApart).ToString();
+                                string sourcePage = null;
+
+                                try
+                                {
+                                    sourcePage = request.Get(urlApartment).ToString();
+                                }
+                                catch (Exception ex)
+                                {
+                                    Logger logger = LogManager.GetCurrentClassLogger();
+                                    logger.Info("не удалось загрузить квартиру" + " " + urlApartment);
+                                    continue;
+                                }
+                               
+                                Console.WriteLine("Данные полученны за: " + (DateTime.Now - startTime).TotalMilliseconds + "\nНачат процесс парсинга данных и загрузки их на диск...");
 
                                 switch (typeApartament)
                                 {
@@ -153,6 +181,8 @@ namespace ParserVolgInfo.Core
                                 }
 
                                 counterFinishApartment++;
+                                Console.WriteLine("Данные успешно загурженны...\n");
+                                Console.Clear();
                             }
                         }
                         #region for malosemeiki
@@ -215,6 +245,11 @@ namespace ParserVolgInfo.Core
             {
                 Logger logger = LogManager.GetCurrentClassLogger();
                 logger.Error(ex);
+            }
+            finally
+            {
+                Console.WriteLine("Работа завершена.");
+                Console.Title = "Parser VI done";
             }
         }
 

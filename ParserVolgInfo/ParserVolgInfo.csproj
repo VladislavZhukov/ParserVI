@@ -90,6 +90,14 @@
     </Content>
     <None Include="Docs\Аналоги для риэлторов.docx" />
     <None Include="Docs\План реализации.odt" />
+    <None Include="Docs\Требования полные\Требования к БД.doc" />
+    <None Include="Docs\Требования полные\Требования к интерфейсу.doc" />
+    <None Include="Docs\Требования полные\Требования к производительности.doc" />
+    <None Include="Docs\Требования полные\Функциональные требования.doc" />
+    <None Include="Docs\Требования урезанные\Требования к БД урезанные.doc" />
+    <None Include="Docs\Требования урезанные\Требования к интерфейсу урезанные.doc" />
+    <None Include="Docs\Требования урезанные\Требования к производительности урезанные.doc" />
+    <None Include="Docs\Требования урезанные\Функциональные требования урезанные.doc" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>
